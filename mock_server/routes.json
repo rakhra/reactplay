@@ -1,0 +1,5 @@
+{
+  "api/*" : "/$1",
+  "/fields/:identifier" : "/fields?identifier=:identifier",
+  "/timeseries/:identifier" : "/timeseries?identifier=:identifier"
+}

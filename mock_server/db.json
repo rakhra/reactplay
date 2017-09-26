@@ -1,0 +1,29 @@
+{
+  "identifiers": [
+    { "identifier" : "Alpha", "owner" : "AlphaOwner" },
+    { "identifier" : "Beta", "owner" : "BetaOwner" },
+    { "identifier" : "Gamma", "owner" : "GammaOwner" }
+  ],
+  "fields": [
+    { "identifier" : "Alpha", "fields" : ["*", "a_field", "b_field", "c_field"] },
+    { "identifier" : "Beta", "fields" : ["*", "a_field", "b_field"] },
+    { "identifier" : "Gamma", "fields" : ["*", "a_field"] }
+  ],
+  "timeseries": [
+    { "identifier" : "Alpha", 
+      "fields" : { 
+        "*" : {"date" : ["2017-01-01"], "value":[1]},
+        "a_field" : {"date" : ["2017-01-02"], "value":[2]},
+        "b_field" : {"date" : ["2017-01-03"], "value":[3]},
+        "c_field" : {"date" : ["2017-01-04"], "value":[4]}}},
+    { "identifier" : "Beta", 
+      "fields" : { 
+        "*" : {"date" : ["2017-01-01"], "value":[1]},
+        "a_field" : {"date" : ["2017-01-02"], "value":[2]},
+        "b_field" : {"date" : ["2017-01-03"], "value":[3]}}},
+    { "identifier" : "Gamma", 
+      "fields" : {
+        "*" : {"date" : ["2017-01-01"], "value":[1]},
+        "a_field" : {"date" : ["2017-01-02"], "value":[2]}}}
+  ]
+}
